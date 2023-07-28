@@ -3,8 +3,8 @@
 use Livewire\Volt\Volt;
 
 beforeEach(function () {
-        $this->counterComponent = Volt::test('counter');
-        $this->counterComponent->set('count', 0);
+    $this->counterComponent = Volt::test('counter');
+    $this->counterComponent->set('count', 0);
 });
 
 it('can render', function () {
@@ -30,16 +30,16 @@ describe('Actions', function () {
     it('can increment after decrementing', function() {
         $this->counterComponent
             ->call('decrement')
-                ->assertSee('-1')
+            ->assertSee('-1')
             ->call('increment')
-                ->assertSee('0');
+            ->assertSee('0');
     });
 
     it('can decrement after incrementing', function() {
         $this->counterComponent
             ->call('increment')
-                ->assertSee('1')
+            ->assertSee('1')
             ->call('decrement')
-                ->assertSee('0');
+            ->assertSee('0');
     });
 });

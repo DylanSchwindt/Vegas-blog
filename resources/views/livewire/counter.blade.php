@@ -1,18 +1,17 @@
 <?php
 
-use App\Models\User;
 use function Livewire\Volt\{state};
 use function Livewire\Volt\{on};
 
-state(['count' => 0])
+state(['count' => 0]);
 
 on(['count-updated' => function () {
     $this->count++;
-}])
+}]);
 
-$incrementCount = fn () => $this->dispatch('count-updated');
+$increment = fn () => $this->dispatch('count-updated');
 
-$decrementCount = fn () => $this->count--;
+$decrement = fn () => $this->count--;
 
 ?>
 
