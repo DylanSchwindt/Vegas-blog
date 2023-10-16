@@ -128,9 +128,21 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/nette/schema" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/brianium/paratest" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/mockery/mockery" />
+<<<<<<< HEAD
       <excludeFolder url="file://$MODULE_DIR$/storage/app" />
       <excludeFolder url="file://$MODULE_DIR$/storage/framework" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/_laravel_idea" />
+=======
+      <excludeFolder url="file://$MODULE_DIR$/vendor/livewire/livewire" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/laravel/folio" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/spatie/once" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/livewire/volt" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/pestphp/pest-plugin-type-coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpstan/phpstan" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/tomasvotruba/type-coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/storage/app" />
+      <excludeFolder url="file://$MODULE_DIR$/storage/framework" />
+>>>>>>> origin/development
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -12,4 +12,5 @@ class Order extends Model
     protected $attributes = [
         'status' => 'draft',
     ];
+
 }
