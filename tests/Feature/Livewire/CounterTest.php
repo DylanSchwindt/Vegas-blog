@@ -15,7 +15,6 @@ it('can render', function () {
 
 describe('Actions', function () {
     it('can increment', function () {
-
         $this->counterComponent
             ->call('increment')
             ->assertSee('1');
