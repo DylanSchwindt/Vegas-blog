@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Vegas-Blog.iml" filepath="$PROJECT_DIR$/.idea/Vegas-Blog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Vegas-blog.iml" filepath="$PROJECT_DIR$/.idea/Vegas-blog.iml" />
     </modules>
   </component>
 </project>
