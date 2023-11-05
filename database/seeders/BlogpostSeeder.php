@@ -13,11 +13,16 @@ class BlogpostSeeder extends Seeder
      */
     public function run(): void
     {
-        Blogpost::factory()->count(10)->public()->unPublished()->create();
-        Blogpost::factory()->count(10)->unPublished()->create();
-        Blogpost::factory()->count(10)->published()->create();
-        Blogpost::factory()->count(10)->public()->create();
-        Blogpost::factory()->count(10)->notPublic()->create();
-        Blogpost::factory()->count(10)->publishedButNotPublic()->create();
+        Blogpost::factory(5)->draft()->create();
+
+        Blogpost::factory(3)->scheduledForFuture()->create();
+
+        Blogpost::factory(4)->publishedAndPublic()->create();
+
+        Blogpost::factory(2)->publishedButNotPublic()->create();
+
+        Blogpost::factory(2)->invalidPublishedDate()->create();
+
+        Blogpost::factory(10)->create();
     }
 }

@@ -16,14 +16,22 @@ return new class extends Migration
             $table->string('title', 255)->unique();
             $table->string('slug', 255)->unique();
             $table->text('description');
+            $table->longText('content');
+            $table->tinyText('content_short');
             $table->string('seo_title', 255)->unique()->nullable();
             $table->text('seo_description')->nullable();
-            $table->longText('content');
-
-            $table->boolean('is_public')->default(true);
+            $table->enum('status', ['draft', 'published', 'scheduled'])
+                ->default('draft');
+            $table->enum('type', ['tutorials', 'news', 'articles', 'cool_tech'])
+                ->default('articles');
+            $table->boolean('is_public')->default(false);
             $table->timestamp('published_at')->nullable();
+            $table->timestamp('scheduled_to_publish_at')->nullable();
             $table->timestamps();
-            $table->mediumInteger('view_count')->default(0);
+            $table->unsignedMediumInteger('view_count')->default(0);
+
+
+        // Add 'scheduled_to_publish_at' timestamp column
         });
     }
 
